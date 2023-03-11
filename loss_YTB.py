@@ -16,14 +16,14 @@ def intersection_over_union(box1, box2, format='midpoint'):
 
 
     elif format == 'midpoint':
-        box1_x1 = box1[..., 0:1] - box1[..., 2:3] / 2
-        box1_y1 = box1[..., 1:2] - box1[..., 3:4] / 2
-        box1_x2 = box1[..., 0:1] + box1[..., 2:3] / 2
-        box1_y2 = box1[..., 1:2] + box1[..., 3:4] / 2
-        box2_x1 = box2[..., 0:1] - box2[..., 2:3] / 2
-        box2_y1 = box2[..., 1:2] - box2[..., 3:4] / 2
-        box2_x2 = box2[..., 0:1] + box2[..., 2:3] / 2
-        box2_y2 = box2[..., 1:2] + box2[..., 3:4] / 2
+        x1_box1 = box1[..., 0:1] - box1[..., 2:3] / 2
+        y1_box1 = box1[..., 1:2] - box1[..., 3:4] / 2
+        x2_box1 = box1[..., 0:1] + box1[..., 2:3] / 2
+        y2_box1 = box1[..., 1:2] + box1[..., 3:4] / 2
+        x1_box2 = box2[..., 0:1] - box2[..., 2:3] / 2
+        y1_box 2= box2[..., 1:2] - box2[..., 3:4] / 2
+        x2_box2 = box2[..., 0:1] + box2[..., 2:3] / 2
+        y2_box2 = box2[..., 1:2] + box2[..., 3:4] / 2
 
     else:
         print("sai format")
